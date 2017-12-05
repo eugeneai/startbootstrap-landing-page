@@ -1,5 +1,6 @@
 <?php
-require_once 'PHPTAL.php';
+require __DIR__ . '/vendor/autoload.php';
+// require_once 'PHPTAL.php';
 
 // create a new template object
 $template = new PHPTAL('index.pt');
