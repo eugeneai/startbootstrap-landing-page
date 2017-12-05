@@ -113,11 +113,29 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Easy to Use &amp; Customize</h2>
-
-
-
-
+                        <h2 tal:content="title">sample title</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr tal:repeat="person people">
+                                    <td tal:content="person/name">person's name</td>
+                                    <td tal:content="person/phone">person's phone</td>
+                                </tr>
+                                <tr tal:replace="">
+                                    <td>sample name</td>
+                                    <td>sample phone</td>
+                                </tr>
+                                <tr tal:replace="">
+                                    <td>sample name</td>
+                                    <td>sample phone</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
