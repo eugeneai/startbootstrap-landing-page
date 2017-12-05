@@ -197,6 +197,11 @@
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Start Bootstrap 2017. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">This is an infrastructure test.</p>
+            <p>
+            <?php echo "And PHP test";
+                  ?>
+            </p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
