@@ -20,4 +20,5 @@ run: build
 publish:
 	@echo "WARNING: Publishing the last checkout (not the current 'condition')."
 	@echo "branch: $(BRANCH)"
+	git push origin $(BRANCH)
 	$(SSH) "cd public_html/$(BRANCH) && git pull origin"
